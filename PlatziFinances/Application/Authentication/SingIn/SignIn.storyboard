@@ -153,24 +153,30 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-Pa-5et">
-                                                <rect key="frame" x="20" y="187" width="335" height="34"/>
+                                                <rect key="frame" x="20" y="217" width="335" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="uem-Fv-o8A"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-bv-vGt">
-                                                <rect key="frame" x="20" y="241" width="335" height="34"/>
+                                                <rect key="frame" x="20" y="276" width="335" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="GPq-bf-Rzs"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-5p-UPl">
-                                                <rect key="frame" x="222.66666666666663" y="285" width="132.33333333333337" height="31"/>
+                                                <rect key="frame" x="222.66666666666663" y="325" width="132.33333333333337" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password">
                                                     <color key="baseForegroundColor" name="RedText"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-hS-3zV">
-                                                <rect key="frame" x="20" y="325" width="335" height="45"/>
+                                                <rect key="frame" x="20" y="365" width="335" height="45"/>
                                                 <color key="backgroundColor" name="GreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="8sL-J1-TVb"/>
@@ -194,6 +200,9 @@
                                                         <color key="value" name="GreenShadow"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="dRx-JK-M3f" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="XSK-k5-3rV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -214,7 +223,7 @@
                                             <constraint firstAttribute="trailing" secondItem="hhZ-bv-vGt" secondAttribute="trailing" constant="20" id="rZW-TP-Q7J"/>
                                             <constraint firstItem="jTK-Pa-5et" firstAttribute="leading" secondItem="CCN-g6-4k7" secondAttribute="leading" constant="20" id="sHh-n4-OkU"/>
                                             <constraint firstItem="vVq-VA-KeL" firstAttribute="centerX" secondItem="CCN-g6-4k7" secondAttribute="centerX" id="srv-NU-Ja4"/>
-                                            <constraint firstItem="jTK-Pa-5et" firstAttribute="top" secondItem="vVq-VA-KeL" secondAttribute="bottom" constant="10" id="x4n-RC-KJw"/>
+                                            <constraint firstItem="jTK-Pa-5et" firstAttribute="top" secondItem="vVq-VA-KeL" secondAttribute="bottom" constant="40" id="x4n-RC-KJw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -249,6 +258,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="102.70935960591133"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="9oH-ks-gCJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="dRx-JK-M3f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpG-D5-Oge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="130"/>
         </scene>
     </scenes>
     <resources>

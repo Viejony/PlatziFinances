@@ -32,6 +32,12 @@
 		29CE9F17285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */; };
 		29CE9F19285F7908004D8B16 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */; };
 		29CE9F1A285F7908004D8B16 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */; };
+		29CE9F1C285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */; };
+		29CE9F1D285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */; };
+		29CE9F1F285FE179004D8B16 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */; };
+		29CE9F20285FE179004D8B16 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */; };
+		29CE9F222860C6FD004D8B16 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F212860C6FD004D8B16 /* EmptyState.xib */; };
+		29CE9F232860C6FD004D8B16 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F212860C6FD004D8B16 /* EmptyState.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +63,9 @@
 		29CE9F13285F6ECF004D8B16 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
+		29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		29CE9F212860C6FD004D8B16 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +209,7 @@
 				29CE9F13285F6ECF004D8B16 /* OnBoarding.storyboard */,
 				29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */,
 				29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */,
+				29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -236,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				298A2E90285EB9E600E01A22 /* Transactions.storyboard */,
+				29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */,
+				29CE9F212860C6FD004D8B16 /* EmptyState.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -326,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				298A2E9E285ECA9B00E01A22 /* Colors.xcassets in Resources */,
+				29CE9F222860C6FD004D8B16 /* EmptyState.xib in Resources */,
 				298A2E9B285EBD0B00E01A22 /* SignIn.storyboard in Resources */,
 				29A608D7285E5A2400B910B4 /* LaunchScreen.storyboard in Resources */,
 				29A608D4285E5A2400B910B4 /* Assets.xcassets in Resources */,
@@ -345,6 +358,7 @@
 				29A608E7285E5F5000B910B4 /* LaunchScreen.storyboard in Resources */,
 				29A608E8285E5F5000B910B4 /* Assets.xcassets in Resources */,
 				29A608E9285E5F5000B910B4 /* Main.storyboard in Resources */,
+				29CE9F232860C6FD004D8B16 /* EmptyState.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +373,9 @@
 				298A2EA1285ED57F00E01A22 /* Shadow.swift in Sources */,
 				29CE9F16285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */,
 				29CE9F19285F7908004D8B16 /* OnBoardingViewController.swift in Sources */,
+				29CE9F1C285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */,
 				29A608CB285E5A2300B910B4 /* AppDelegate.swift in Sources */,
+				29CE9F1F285FE179004D8B16 /* TransactionsViewController.swift in Sources */,
 				29A608CD285E5A2300B910B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CE9F20285FE179004D8B16 /* TransactionsViewController.swift in Sources */,
 				29A608E2285E5F5000B910B4 /* ViewController.swift in Sources */,
+				29CE9F1D285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */,
 				29A608E3285E5F5000B910B4 /* AppDelegate.swift in Sources */,
 				29A608E4285E5F5000B910B4 /* SceneDelegate.swift in Sources */,
 				29CE9F17285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */,
@@ -525,7 +543,7 @@
 				INFOPLIST_FILE = PlatziFinances/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignIn;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -554,7 +572,7 @@
 				INFOPLIST_FILE = PlatziFinances/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignIn;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

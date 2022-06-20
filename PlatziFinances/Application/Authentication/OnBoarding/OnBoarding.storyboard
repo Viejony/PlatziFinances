@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--On Boarding Steps View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingSteps" id="Y6W-OH-hqX" customClass="OnBoardingStepsViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,14 +24,14 @@
                                     <constraint firstAttribute="height" constant="200" id="mfw-fF-rKR"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-DQ-2w1">
-                                <rect key="frame" x="20" y="438" width="374" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-DQ-2w1">
+                                <rect key="frame" x="20" y="438" width="374" height="148"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
                                 <color key="textColor" name="GreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSb-ku-Cbl">
-                                <rect key="frame" x="20" y="496" width="374" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33 quas nemo aut consectetur autem ea quisquam dolor est modi nemo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSb-ku-Cbl">
+                                <rect key="frame" x="20" y="594" width="374" height="70"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" name="GrayText"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +50,15 @@
                             <constraint firstItem="VHE-DQ-2w1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="loq-Fh-4Tp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="wSb-ku-Cbl" id="Whi-HY-WWo"/>
+                        <outlet property="onBoardingImage" destination="ZBv-pS-L0R" id="lQG-Ke-atj"/>
+                        <outlet property="titleLabel" destination="VHE-DQ-2w1" id="Rqm-eO-tzE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
+            <point key="canvasLocation" x="1758" y="799"/>
         </scene>
         <!--On Boarding Container View Controller-->
         <scene sceneID="xgr-1Q-WlE">
@@ -94,9 +99,14 @@
                                         <color key="value" name="GreenShadow"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="bj3-R1-sEj" kind="presentation" identifier="SiignIn" modalPresentationStyle="fullScreen" id="ebv-BP-P2y"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-V4-l4i">
                                 <rect key="frame" x="149" y="688" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" name="GrayText"/>
+                                <color key="currentPageIndicatorTintColor" name="GrayShadow"/>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f9e-R3-n89"/>
@@ -121,16 +131,27 @@
             </objects>
             <point key="canvasLocation" x="110" y="799"/>
         </scene>
-        <!--Page View Controller-->
+        <!--SignIn-->
+        <scene sceneID="BHC-EZ-aD9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="bj3-R1-sEj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S34-As-zZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="1336"/>
+        </scene>
+        <!--On Boarding View Controller-->
         <scene sceneID="OSN-H7-pfa">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="MnU-Hc-xK5" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="MnU-Hc-xK5" customClass="OnBoardingViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VU6-0z-ZX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="802"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="GrayShadow">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="GrayText">
             <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
