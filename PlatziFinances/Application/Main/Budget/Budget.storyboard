@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ddj-Um-05P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,31 +8,135 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Budget-->
         <scene sceneID="3SF-3d-zdD">
             <objects>
-                <viewController id="U2x-d3-sLQ" sceneMemberID="viewController">
+                <viewController id="U2x-d3-sLQ" customClass="BudgetViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="maS-0L-iPu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bq5-1P-Iks">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="eqn-Te-2L0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5z-wWx">
+                                            <rect key="frame" x="57" y="2" width="100" height="50"/>
+                                            <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="4Zi-zE-9cO"/>
+                                                <constraint firstAttribute="width" constant="100" id="i5Y-mf-20K"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bh7-b5-aTx">
+                                            <rect key="frame" x="57" y="2" width="300" height="50"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-E3-TdP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="INCOMING">
+                                                        <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                        <color key="baseForegroundColor" name="GrayTextDesc"/>
+                                                    </buttonConfiguration>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="U2x-d3-sLQ" eventType="touchUpInside" id="Z0n-2q-3ki"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5H-fl-2J8">
+                                                    <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="ALL">
+                                                        <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                        <color key="baseForegroundColor" name="GrayTextDesc"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="U2x-d3-sLQ" eventType="touchUpInside" id="3tb-5p-F0D"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-WX-9RV">
+                                                    <rect key="frame" x="200" y="0.0" width="100" height="50"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="EXPENSES">
+                                                        <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                        <color key="baseForegroundColor" name="GrayTextDesc"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="U2x-d3-sLQ" eventType="touchUpInside" id="uDd-3u-36O"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Zsc-V2-68T"/>
+                                                <constraint firstAttribute="width" constant="300" id="we0-Jc-lBx"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="bh7-b5-aTx" firstAttribute="centerY" secondItem="eqn-Te-2L0" secondAttribute="centerY" id="2kY-Q2-aSB"/>
+                                        <constraint firstItem="W9i-5z-wWx" firstAttribute="top" secondItem="bh7-b5-aTx" secondAttribute="top" id="XfK-Wm-KGz"/>
+                                        <constraint firstItem="W9i-5z-wWx" firstAttribute="leading" secondItem="bh7-b5-aTx" secondAttribute="leading" id="mGy-EH-le1"/>
+                                        <constraint firstItem="bh7-b5-aTx" firstAttribute="centerX" secondItem="eqn-Te-2L0" secondAttribute="centerX" id="wHr-sz-vlb"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="U2x-d3-sLQ" id="rcS-ic-eYg"/>
+                                    <outlet property="delegate" destination="U2x-d3-sLQ" id="Lrb-Od-bR7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2od-UE-huG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bq5-1P-Iks" firstAttribute="leading" secondItem="2od-UE-huG" secondAttribute="leading" id="5mz-M8-VjF"/>
+                            <constraint firstItem="2od-UE-huG" firstAttribute="bottom" secondItem="Bq5-1P-Iks" secondAttribute="bottom" id="B7l-oP-Wy0"/>
+                            <constraint firstItem="Bq5-1P-Iks" firstAttribute="top" secondItem="2od-UE-huG" secondAttribute="top" id="Qxi-HO-y2r"/>
+                            <constraint firstItem="2od-UE-huG" firstAttribute="trailing" secondItem="Bq5-1P-Iks" secondAttribute="trailing" id="q6e-gS-lMV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="08f-Fa-Idv"/>
+                    <navigationItem key="navigationItem" title="Budget" id="08f-Fa-Idv"/>
+                    <connections>
+                        <outlet property="animationLayout" destination="mGy-EH-le1" id="Irs-u6-A4K"/>
+                        <outlet property="tableView" destination="Bq5-1P-Iks" id="zbQ-U6-Ua8"/>
+                        <outletCollection property="animationsButtons" destination="IiF-E3-TdP" collectionClass="NSMutableArray" id="xjb-5Y-Q0D"/>
+                        <outletCollection property="animationsButtons" destination="p5H-fl-2J8" collectionClass="NSMutableArray" id="gr9-1Y-GJi"/>
+                        <outletCollection property="animationsButtons" destination="3q6-WX-9RV" collectionClass="NSMutableArray" id="6Tp-nU-UA3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9E-xE-iTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="773"/>
+            <point key="canvasLocation" x="1500.0000000000002" y="772.76785714285711"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Th4-h5-f9N">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ddj-Um-05P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gXl-ru-3TM"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarBudget" id="EhJ-Gk-3mL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qny-eP-6au">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="qny-eP-6au">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -44,6 +149,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBarBudget" width="20" height="26"/>
+        <namedColor name="GrayTextDesc">
+            <color red="0.14117647058823529" green="0.1803921568627451" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

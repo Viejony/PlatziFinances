@@ -20,16 +20,23 @@ class TransactionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let cell = UINib(nibName: "TransactionsCell", bundle: Bundle.main)
+        tableView.register(cell, forCellReuseIdentifier: "cell")
 
-        // Do any additional setup after loading the view.
+        // Set top bar color
+        Tools.instance.setTopBar(self)
     }
 
 }
 
+extension TransactionsViewController: UITableViewDelegate {
+    
+}
 
 extension TransactionsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = 0
+        let count = 10
         tableView.backgroundView = count == 0 ? emptyStateView : nil
         tableView.separatorStyle = count == 0 ? .none : .singleLine
         return count
