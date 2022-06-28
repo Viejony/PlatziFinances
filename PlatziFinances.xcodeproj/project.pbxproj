@@ -20,36 +20,19 @@
 		29A608D2285E5A2300B910B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D0285E5A2300B910B4 /* Main.storyboard */; };
 		29A608D4285E5A2400B910B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D3285E5A2400B910B4 /* Assets.xcassets */; };
 		29A608D7285E5A2400B910B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D5285E5A2400B910B4 /* LaunchScreen.storyboard */; };
-		29A608E2285E5F5000B910B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A608CE285E5A2300B910B4 /* ViewController.swift */; };
-		29A608E3285E5F5000B910B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A608CA285E5A2300B910B4 /* AppDelegate.swift */; };
-		29A608E4285E5F5000B910B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A608CC285E5A2300B910B4 /* SceneDelegate.swift */; };
-		29A608E7285E5F5000B910B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D5285E5A2400B910B4 /* LaunchScreen.storyboard */; };
-		29A608E8285E5F5000B910B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D3285E5A2400B910B4 /* Assets.xcassets */; };
-		29A608E9285E5F5000B910B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A608D0285E5A2300B910B4 /* Main.storyboard */; };
 		29A608F1285E600F00B910B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A608F0285E600F00B910B4 /* MapKit.framework */; };
 		29CE9F14285F6ECF004D8B16 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F13285F6ECF004D8B16 /* OnBoarding.storyboard */; };
 		29CE9F16285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */; };
-		29CE9F17285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */; };
 		29CE9F19285F7908004D8B16 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */; };
-		29CE9F1A285F7908004D8B16 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F18285F7908004D8B16 /* OnBoardingViewController.swift */; };
 		29CE9F1C285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */; };
-		29CE9F1D285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1B285F7EA7004D8B16 /* OnBoardingStepsViewController.swift */; };
 		29CE9F1F285FE179004D8B16 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */; };
-		29CE9F20285FE179004D8B16 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F1E285FE179004D8B16 /* TransactionsViewController.swift */; };
 		29CE9F222860C6FD004D8B16 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F212860C6FD004D8B16 /* EmptyState.xib */; };
-		29CE9F232860C6FD004D8B16 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F212860C6FD004D8B16 /* EmptyState.xib */; };
 		29CE9F262860D5AE004D8B16 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F252860D5AE004D8B16 /* Add.storyboard */; };
-		29CE9F272860D5AE004D8B16 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F252860D5AE004D8B16 /* Add.storyboard */; };
 		29CE9F292860D7B1004D8B16 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F282860D7B1004D8B16 /* TabBarViewController.swift */; };
-		29CE9F2A2860D7B1004D8B16 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F282860D7B1004D8B16 /* TabBarViewController.swift */; };
 		29CE9F2C2860DA69004D8B16 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F2B2860DA69004D8B16 /* AddViewController.swift */; };
-		29CE9F2D2860DA69004D8B16 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F2B2860DA69004D8B16 /* AddViewController.swift */; };
 		29CE9F2F286111B7004D8B16 /* TransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F2E286111B7004D8B16 /* TransactionsCell.xib */; };
-		29CE9F30286111B7004D8B16 /* TransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CE9F2E286111B7004D8B16 /* TransactionsCell.xib */; };
 		29CE9F3228611278004D8B16 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F3128611278004D8B16 /* BudgetViewController.swift */; };
-		29CE9F3328611278004D8B16 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F3128611278004D8B16 /* BudgetViewController.swift */; };
 		29CE9F3628611710004D8B16 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F3528611710004D8B16 /* Tools.swift */; };
-		29CE9F3728611710004D8B16 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CE9F3528611710004D8B16 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +51,6 @@
 		29A608D3285E5A2400B910B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A608D6285E5A2400B910B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A608D8285E5A2400B910B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29A608ED285E5F5000B910B4 /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A608EE285E5F5000B910B4 /* Production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Production.plist; path = /Users/jhonyferangarita/iOS/PlatziFinances/Production.plist; sourceTree = "<absolute>"; };
 		29A608F0285E600F00B910B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		29CE9F13285F6ECF004D8B16 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
@@ -91,13 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A608F1285E600F00B910B4 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29A608E5285E5F5000B910B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				29A608C7285E5A2300B910B4 /* PlatziFinances.app */,
-				29A608ED285E5F5000B910B4 /* Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,23 +294,6 @@
 			productReference = 29A608C7285E5A2300B910B4 /* PlatziFinances.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29A608E0285E5F5000B910B4 /* Production */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29A608EA285E5F5000B910B4 /* Build configuration list for PBXNativeTarget "Production" */;
-			buildPhases = (
-				29A608E1285E5F5000B910B4 /* Sources */,
-				29A608E5285E5F5000B910B4 /* Frameworks */,
-				29A608E6285E5F5000B910B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Production;
-			productName = PlatziFinances;
-			productReference = 29A608ED285E5F5000B910B4 /* Production.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -366,7 +323,6 @@
 			projectRoot = "";
 			targets = (
 				29A608C6285E5A2300B910B4 /* PlatziFinances */,
-				29A608E0285E5F5000B910B4 /* Production */,
 			);
 		};
 /* End PBXProject section */
@@ -392,19 +348,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29A608E6285E5F5000B910B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29A608E7285E5F5000B910B4 /* LaunchScreen.storyboard in Resources */,
-				29A608E8285E5F5000B910B4 /* Assets.xcassets in Resources */,
-				29CE9F272860D5AE004D8B16 /* Add.storyboard in Resources */,
-				29A608E9285E5F5000B910B4 /* Main.storyboard in Resources */,
-				29CE9F30286111B7004D8B16 /* TransactionsCell.xib in Resources */,
-				29CE9F232860C6FD004D8B16 /* EmptyState.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,24 +367,6 @@
 				29A608CB285E5A2300B910B4 /* AppDelegate.swift in Sources */,
 				29CE9F1F285FE179004D8B16 /* TransactionsViewController.swift in Sources */,
 				29A608CD285E5A2300B910B4 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29A608E1285E5F5000B910B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29CE9F2A2860D7B1004D8B16 /* TabBarViewController.swift in Sources */,
-				29CE9F20285FE179004D8B16 /* TransactionsViewController.swift in Sources */,
-				29CE9F2D2860DA69004D8B16 /* AddViewController.swift in Sources */,
-				29A608E2285E5F5000B910B4 /* ViewController.swift in Sources */,
-				29CE9F1D285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */,
-				29A608E3285E5F5000B910B4 /* AppDelegate.swift in Sources */,
-				29A608E4285E5F5000B910B4 /* SceneDelegate.swift in Sources */,
-				29CE9F3728611710004D8B16 /* Tools.swift in Sources */,
-				29CE9F3328611278004D8B16 /* BudgetViewController.swift in Sources */,
-				29CE9F17285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */,
-				29CE9F1A285F7908004D8B16 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,64 +564,6 @@
 			};
 			name = Release;
 		};
-		29A608EB285E5F5000B910B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7NE5HN3EQ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "PlatziFinances copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhony.PlatziFinances;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		29A608EC285E5F5000B910B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7NE5HN3EQ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "PlatziFinances copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhony.PlatziFinances;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -714,15 +581,6 @@
 			buildConfigurations = (
 				29A608DC285E5A2400B910B4 /* Debug */,
 				29A608DD285E5A2400B910B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29A608EA285E5F5000B910B4 /* Build configuration list for PBXNativeTarget "Production" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29A608EB285E5F5000B910B4 /* Debug */,
-				29A608EC285E5F5000B910B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
