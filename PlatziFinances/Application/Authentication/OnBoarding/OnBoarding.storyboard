@@ -137,7 +137,7 @@
                 <viewControllerPlaceholder storyboardName="SignIn" id="bj3-R1-sEj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S34-As-zZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="1336"/>
+            <point key="canvasLocation" x="260" y="1211"/>
         </scene>
         <!--On Boarding View Controller-->
         <scene sceneID="OSN-H7-pfa">

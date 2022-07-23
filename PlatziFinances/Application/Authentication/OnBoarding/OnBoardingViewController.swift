@@ -24,7 +24,7 @@ class OnBoardingViewController: UIPageViewController {
                 description: "Press the start button",
                 imageName: "OnBoarding1"),
             OnBoardingItem(
-                title: "You,ve finished your onboarding",
+                title: "You've finished your onboarding",
                 description: "Press the start button",
                 imageName: "OnBoarding2"),
         ]
@@ -56,7 +56,9 @@ class OnBoardingViewController: UIPageViewController {
     }
     
     func instanceViewController(_ index: Int) -> UIViewController{
-        guard let viewController = UIStoryboard(name: "OnBoarding", bundle: Bundle.main).instantiateViewController(withIdentifier: "OnBoardingSteps") as? OnBoardingStepsViewController else {
+        guard let viewController = UIStoryboard(
+            name: "OnBoarding",
+            bundle: Bundle.main).instantiateViewController(withIdentifier: "OnBoardingSteps") as? OnBoardingStepsViewController else {
             return UIViewController()
         }
         

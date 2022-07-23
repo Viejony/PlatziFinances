@@ -11,7 +11,7 @@
         <!--Profile-->
         <scene sceneID="Eci-Re-rU0">
             <objects>
-                <viewController id="F1f-lx-lIf" sceneMemberID="viewController">
+                <viewController id="F1f-lx-lIf" customClass="ProfileViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xo-5A-vgo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

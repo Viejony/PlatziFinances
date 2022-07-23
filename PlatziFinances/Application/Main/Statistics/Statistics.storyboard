@@ -12,7 +12,7 @@
         <!--Statistics-->
         <scene sceneID="2BP-w1-rU7">
             <objects>
-                <viewController id="hiH-vU-UDu" sceneMemberID="viewController">
+                <viewController id="hiH-vU-UDu" customClass="StatisticsViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="acq-g2-qfr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
