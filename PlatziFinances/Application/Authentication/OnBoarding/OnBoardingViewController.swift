@@ -24,17 +24,13 @@ class OnBoardingViewController: UIPageViewController {
             OnBoardingItem(
                 title: Tools.getTransString("onboardingMsg0"),
                 description: Tools.getTransString("onboardingPressStart"),
-                imageName: "OnBoarding1"),
-            OnBoardingItem(
-                title: Tools.getTransString("onboardingMsg0"),
-                description: Tools.getTransString("onboardingPressStart"),
-                imageName: "OnBoarding1"),
+                imageName: "GreenPig"),
             OnBoardingItem(
                 title: Tools.getTransString("onboardingMsg1"),
                 description: Tools.getTransString("onboardingPressStart"),
                 imageName: "OnBoarding1"),
             OnBoardingItem(
-                title: Tools.getTransString("onboardingMsg1"),
+                title: Tools.getTransString("onboardingMsg2"),
                 description: Tools.getTransString("onboardingPressStart"),
                 imageName: "OnBoarding2"),
         ]

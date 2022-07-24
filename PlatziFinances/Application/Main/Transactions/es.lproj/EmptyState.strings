@@ -1,0 +1,6 @@
+
+/* Class = "UILabel"; text = "You don’t have\nany transactions"; ObjectID = "AHx-V3-rws"; */
+"AHx-V3-rws.text" = "No tienes ninguna transacción";
+
+/* Class = "UILabel"; text = "To start press the add button"; ObjectID = "MWh-Yh-cD6"; */
+"MWh-Yh-cD6.text" = "Para iniciar presiona el botón agregar";

@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "Budget"; ObjectID = "08f-Fa-Idv"; */
+"08f-Fa-Idv.title" = "Budget";
+
+/* Class = "UIButton"; configuration.title = "EXPENSES"; ObjectID = "3q6-WX-9RV"; */
+"3q6-WX-9RV.configuration.title" = "EXPENSES";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3q6-WX-9RV"; */
+"3q6-WX-9RV.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "INCOMING"; ObjectID = "IiF-E3-TdP"; */
+"IiF-E3-TdP.configuration.title" = "INCOMING";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IiF-E3-TdP"; */
+"IiF-E3-TdP.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ALL"; ObjectID = "p5H-fl-2J8"; */
+"p5H-fl-2J8.configuration.title" = "ALL";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "p5H-fl-2J8"; */
+"p5H-fl-2J8.normalTitle" = "Button";

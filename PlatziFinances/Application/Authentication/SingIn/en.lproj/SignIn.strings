@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "Jde-hS-3zV"; */
+"Jde-hS-3zV.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Jde-hS-3zV"; */
+"Jde-hS-3zV.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign up with"; ObjectID = "JvZ-8Y-BGk"; */
+"JvZ-8Y-BGk.configuration.title" = "Sign up with";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JvZ-8Y-BGk"; */
+"JvZ-8Y-BGk.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P0y-Om-6aR"; */
+"P0y-Om-6aR.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Forgot Password"; ObjectID = "VVu-5p-UPl"; */
+"VVu-5p-UPl.configuration.title" = "Forgot Password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VVu-5p-UPl"; */
+"VVu-5p-UPl.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "hhZ-bv-vGt"; */
+"hhZ-bv-vGt.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "jTK-Pa-5et"; */
+"jTK-Pa-5et.placeholder" = "Email";
+
+/* Class = "UIButton"; configuration.title = "SIGN UP"; ObjectID = "pvc-Hm-F38"; */
+"pvc-Hm-F38.configuration.title" = "SIGN UP";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pvc-Hm-F38"; */
+"pvc-Hm-F38.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uls-iB-7Pn"; */
+"uls-iB-7Pn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zXi-zR-z4J"; */
+"zXi-zR-z4J.normalTitle" = "Button";

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "Iniciar"; ObjectID = "5oy-2F-jQ5"; */
+"5oy-2F-jQ5.configuration.title" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5oy-2F-jQ5"; */
+"5oy-2F-jQ5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33"; ObjectID = "VHE-DQ-2w1"; */
+"VHE-DQ-2w1.text" = "Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33 quas nemo aut consectetur autem ea quisquam dolor est modi nemo."; ObjectID = "wSb-ku-Cbl"; */
+"wSb-ku-Cbl.text" = "Lorem ipsum dolor sit amet. Ut repudiandae pariatur 33 quas nemo aut consectetur autem ea quisquam dolor est modi nemo.";
