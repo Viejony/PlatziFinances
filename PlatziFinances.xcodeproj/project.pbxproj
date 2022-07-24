@@ -16,6 +16,7 @@
 		29250555288DB086005BCD26 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29250557288DB086005BCD26 /* Budget.storyboard */; };
 		2925055C288DB156005BCD26 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2925055E288DB156005BCD26 /* Statistics.storyboard */; };
 		29250565288DB33E005BCD26 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29250567288DB33E005BCD26 /* Profile.storyboard */; };
+		29250573288DC202005BCD26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250572288DC202005BCD26 /* SignInViewController.swift */; };
 		2969BBBD288A553000292FCD /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969BBBC288A553000292FCD /* StatisticsViewController.swift */; };
 		2969BBBF288A55D500292FCD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969BBBE288A55D500292FCD /* ProfileViewController.swift */; };
 		298A2E9E285ECA9B00E01A22 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298A2E9D285ECA9B00E01A22 /* Colors.xcassets */; };
@@ -67,6 +68,8 @@
 		29250566288DB33E005BCD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		29250569288DB340005BCD26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Profile.strings; sourceTree = "<group>"; };
 		2925056B288DB36E005BCD26 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Profile.strings; sourceTree = "<group>"; };
+		29250571288DC15E005BCD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29250572288DC202005BCD26 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2969BBBC288A553000292FCD /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		2969BBBE288A55D500292FCD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		298A2E9D285ECA9B00E01A22 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -77,7 +80,6 @@
 		29A608CE285E5A2300B910B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29A608D1285E5A2300B910B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29A608D3285E5A2400B910B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29A608D6285E5A2400B910B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A608D8285E5A2400B910B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A608F0285E600F00B910B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		29CE9F15285F76E2004D8B16 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				2925052F288DA9C6005BCD26 /* SignIn.storyboard */,
+				29250572288DC202005BCD26 /* SignInViewController.swift */,
 			);
 			path = SingIn;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				29CE9F16285F76E2004D8B16 /* OnBoardingContainerViewController.swift in Sources */,
 				29CE9F19285F7908004D8B16 /* OnBoardingViewController.swift in Sources */,
 				29CE9F3228611278004D8B16 /* BudgetViewController.swift in Sources */,
+				29250573288DC202005BCD26 /* SignInViewController.swift in Sources */,
 				29CE9F292860D7B1004D8B16 /* TabBarViewController.swift in Sources */,
 				29CE9F1C285F7EA7004D8B16 /* OnBoardingStepsViewController.swift in Sources */,
 				29A608CB285E5A2300B910B4 /* AppDelegate.swift in Sources */,
@@ -561,7 +565,7 @@
 		29A608D5285E5A2400B910B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29A608D6285E5A2400B910B4 /* Base */,
+				29250571288DC15E005BCD26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

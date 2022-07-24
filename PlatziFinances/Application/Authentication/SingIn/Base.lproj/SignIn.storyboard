@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SignInViewController" customModule="PlatziFinances" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,14 +146,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCN-g6-4k7">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vVq-VA-KeL">
-                                                <rect key="frame" x="67.666666666666686" y="24" width="240" height="153"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen_en" translatesAutoresizingMaskIntoConstraints="NO" id="vVq-VA-KeL">
+                                                <rect key="frame" x="67.666666666666686" y="24" width="240" height="121"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="W3g-1V-c4k"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-Pa-5et">
-                                                <rect key="frame" x="20" y="217" width="335" height="39"/>
+                                                <rect key="frame" x="20" y="185" width="335" height="39"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="39" id="uem-Fv-o8A"/>
                                                 </constraints>
@@ -161,7 +161,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-bv-vGt">
-                                                <rect key="frame" x="20" y="276" width="335" height="39"/>
+                                                <rect key="frame" x="20" y="244" width="335" height="39"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="39" id="GPq-bf-Rzs"/>
                                                 </constraints>
@@ -169,14 +169,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-5p-UPl">
-                                                <rect key="frame" x="222.66666666666663" y="325" width="132.33333333333337" height="31"/>
+                                                <rect key="frame" x="222.66666666666663" y="293" width="132.33333333333337" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password">
                                                     <color key="baseForegroundColor" name="RedText"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-hS-3zV">
-                                                <rect key="frame" x="20" y="365" width="335" height="45"/>
+                                                <rect key="frame" x="20" y="343" width="335" height="45"/>
                                                 <color key="backgroundColor" name="GreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="8sL-J1-TVb"/>
@@ -219,7 +219,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Jde-hS-3zV" secondAttribute="trailing" constant="20" id="jCd-Ty-ULy"/>
                                             <constraint firstItem="Jde-hS-3zV" firstAttribute="leading" secondItem="CCN-g6-4k7" secondAttribute="leading" constant="20" id="jxB-hj-IPY"/>
                                             <constraint firstItem="hhZ-bv-vGt" firstAttribute="leading" secondItem="CCN-g6-4k7" secondAttribute="leading" constant="20" id="onv-Ig-Mqa"/>
-                                            <constraint firstItem="Jde-hS-3zV" firstAttribute="top" secondItem="hhZ-bv-vGt" secondAttribute="bottom" constant="50" id="qBn-7F-kBV"/>
+                                            <constraint firstItem="Jde-hS-3zV" firstAttribute="top" secondItem="hhZ-bv-vGt" secondAttribute="bottom" constant="60" id="qBn-7F-kBV"/>
                                             <constraint firstAttribute="trailing" secondItem="hhZ-bv-vGt" secondAttribute="trailing" constant="20" id="rZW-TP-Q7J"/>
                                             <constraint firstItem="jTK-Pa-5et" firstAttribute="leading" secondItem="CCN-g6-4k7" secondAttribute="leading" constant="20" id="sHh-n4-OkU"/>
                                             <constraint firstItem="vVq-VA-KeL" firstAttribute="centerX" secondItem="CCN-g6-4k7" secondAttribute="centerX" id="srv-NU-Ja4"/>
@@ -254,6 +254,9 @@
                             <constraint firstItem="CCN-g6-4k7" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" priority="250" id="zl9-2h-y1l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerImage" destination="vVq-VA-KeL" id="sGH-ca-x18"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,7 +274,7 @@
     <resources>
         <image name="Facebook" width="10" height="18"/>
         <image name="Google" width="17" height="18"/>
-        <image name="LaunchScreen" width="304" height="153"/>
+        <image name="LaunchScreen_en" width="245" height="121"/>
         <image name="Twitter" width="19" height="16"/>
         <namedColor name="BlueFacebook">
             <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
