@@ -1,0 +1,6 @@
+hello = "Hello";
+
+onboardingMsg0 = "This app helps you to manage your money";
+onboardingMsg1 = "Save money and reduce debt";
+onboardingMsg2 = "You've finished your onboarding";
+onboardingPressStart = "Press the start button";

@@ -24,4 +24,11 @@ class Tools{
             viewController.navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
+    
+    static func getTransString(_ key: String) -> String{
+        return NSLocalizedString(key, comment: "")
+    }
+    
 }
+
+

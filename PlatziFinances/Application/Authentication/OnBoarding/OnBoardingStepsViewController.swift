@@ -19,7 +19,7 @@ class OnBoardingStepsViewController: UIViewController {
         super.viewDidLoad()
         
         titleLabel.text = item?.title
-        descriptionLabel.text = item?.title
+        descriptionLabel.text = item?.description
         onBoardingImage.image = UIImage(named: item?.imageName ?? "")
         
     }

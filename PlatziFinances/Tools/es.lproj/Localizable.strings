@@ -1,0 +1,6 @@
+hello = "Hola";
+
+onboardingMsg0 = "Esta app te ayuda a administrar tu dinero";
+onboardingMsg1 = "Ahorra dinero y reduce to deuda";
+onboardingMsg2 = "Has finalizado to inducción";
+onboardingPressStart = "Presiona el botón Iniciar";

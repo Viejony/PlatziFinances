@@ -17,78 +17,101 @@ class OnBoardingViewController: UIPageViewController {
     
     var pageControl: UIPageControl?
     
-    fileprivate(set) lazy var items: [OnBoardingItem] = {
+    // MARK: - Properties
+    
+    fileprivate(set) lazy var itemsContents: [OnBoardingItem] = {
         return [
             OnBoardingItem(
-                title: "Save money and reduce debt",
-                description: "Press the start button",
+                title: Tools.getTransString("onboardingMsg0"),
+                description: Tools.getTransString("onboardingPressStart"),
                 imageName: "OnBoarding1"),
             OnBoardingItem(
-                title: "You've finished your onboarding",
-                description: "Press the start button",
+                title: Tools.getTransString("onboardingMsg0"),
+                description: Tools.getTransString("onboardingPressStart"),
+                imageName: "OnBoarding1"),
+            OnBoardingItem(
+                title: Tools.getTransString("onboardingMsg1"),
+                description: Tools.getTransString("onboardingPressStart"),
+                imageName: "OnBoarding1"),
+            OnBoardingItem(
+                title: Tools.getTransString("onboardingMsg1"),
+                description: Tools.getTransString("onboardingPressStart"),
                 imageName: "OnBoarding2"),
         ]
     }()
     
     fileprivate(set) lazy var contentViewController: [UIViewController] = {
         var items = [UIViewController]()
-        for i in 0..<self.items.count{
+        for i in 0..<self.itemsContents.count{
             items.append(self.instanceViewController(i))
         }
         return items
     }()
 
+    // MARK: - Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         delegate = self
         dataSource = self
         
-        pageControl?.numberOfPages = items.count
+        pageControl?.numberOfPages = itemsContents.count
         updateContainerView(stepNumber: 0)
     }
     
-    func updateContainerView(stepNumber index: Int){
+    private func updateContainerView(stepNumber index: Int){
         setViewControllers(
             [contentViewController[index]],
             direction: .forward,
             animated: true)
     }
     
-    func instanceViewController(_ index: Int) -> UIViewController{
+    private func instanceViewController(_ index: Int) -> UIViewController{
         guard let viewController = UIStoryboard(
             name: "OnBoarding",
-            bundle: Bundle.main).instantiateViewController(withIdentifier: "OnBoardingSteps") as? OnBoardingStepsViewController else {
+            bundle: Bundle.main).instantiateViewController(withIdentifier: "OnBoardingSteps") as? OnBoardingStepsViewController else
+        {
             return UIViewController()
         }
         
-        viewController.item = items[index]
+        viewController.item = itemsContents[index]
         return viewController
     }
 
 }
 
+// MARK: - Extensions
+
 extension OnBoardingViewController: UIPageViewControllerDataSource {
     
     func pageViewController(
         _ pageViewController: UIPageViewController,
-        viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
         
-        let index = contentViewController.firstIndex(of: viewController)
-        if index == 0 {
+        guard let index = contentViewController.firstIndex(of: viewController) else{
             return nil
         }
-        return contentViewController[index! + 1]
+        let previousIndex = index - 1
+        guard previousIndex >= 0 && contentViewController.count > previousIndex else {
+            return nil
+        }
+        return contentViewController[previousIndex]
     }
     
     func pageViewController(
         _ pageViewController: UIPageViewController,
-        viewControllerAfter viewController: UIViewController) -> UIViewController? {
-            let index = contentViewController.firstIndex(of: viewController)
-        if index == contentViewController.count - 1 {
+        viewControllerAfter viewController: UIViewController) -> UIViewController?
+    {
+        guard let index = contentViewController.firstIndex(of: viewController) else{
             return nil
         }
-          return contentViewController[index! + 1]
+        let nextIndex = index + 1
+        guard nextIndex < contentViewController.count && contentViewController.count > nextIndex else {
+            return nil
+        }
+        return contentViewController[nextIndex]
     }
 }
 
@@ -103,7 +126,7 @@ extension OnBoardingViewController: UIPageViewControllerDelegate {
         guard let index = contentViewController.firstIndex(of: viewControllers!.first!) else{
             return
         }
-        
         pageControl?.currentPage = index
     }
+    
 }
